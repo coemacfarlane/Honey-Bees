@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  /* cursor: none; */
 }
 
 :root {
@@ -15,6 +14,8 @@
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   overflow-y: hidden;
 }
 
@@ -173,13 +174,13 @@ a {
 #three h1 {
   color: #2f8c8c;
   grid-area: 1 / span 3 / 1 / span 1;
-  margin-left: 1em;
+  margin-left: 5vw;
 }
 
 #three .text {
   grid-column: 1 / span 3;
   grid-row: 2 / span 2;
-  margin: 2vh 15vw 0 15vw;
+  margin: 2vh 15vw 0 5vw;
 }
 
 #flower {
