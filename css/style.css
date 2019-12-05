@@ -25,6 +25,10 @@ h1 {
   font-weight: lighter;
 }
 
+h2 {
+  font-size: 1.3em;
+}
+
 a {
   text-decoration: none;
   background-color: transparent;
@@ -34,6 +38,22 @@ a {
 
 p {
   line-height: 2em;
+}
+
+#logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  height: 40px;
+  opacity: 0.7;
+  z-index: 1;
+}
+#logo:hover {
+  opacity: 1;
+}
+
+#logo img {
+  height: 100%;
 }
 
 /* the honey bee's image container */
@@ -389,6 +409,47 @@ p {
   color: var(--tomato-red);
 }
 
+#open {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2em;
+  text-decoration: underline var(--tomato-red);
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 50vh;
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  /* transform: translateY(-100vh); */
+}
+
+/* Modal Content/Box */
+#modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+#close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* MOBILE    MOBILE    MOBILE    MOBILE    MOBILE    MOBILE    MOBILE */
 
 .mobile {
@@ -412,8 +473,7 @@ p {
     transform: none;
   }
 
-  .slide#one {
-  }
+  /* SLIDE ONE */
 
   a #bee {
     display: none;
@@ -427,7 +487,7 @@ p {
     align-self: center;
   }
 
-  /* SLIDE TWO   SLIDE TWO   SLIDE TWO   SLIDE TWO   SLIDE TWO */
+  /* SLIDE TWO */
   .slide#two {
     display: flex;
     flex-direction: column;
@@ -444,11 +504,15 @@ p {
     margin: 5vh 10vw;
   }
 
+  /* SLIDE THREE */
+
   #three .text {
     grid-column: 2 / span 3;
     grid-row: 2 / span 3;
     margin: 10vh 5vw 0 10vw;
   }
+
+  /* SLIDE FOUR */
 
   #four h1 {
     grid-row: 1 / span 2;
@@ -466,6 +530,8 @@ p {
     grid-row: 3 / span 2 !important;
     margin: 5vh 5vw 0 5vw !important;
   }
+
+  /* SLIDE SIX */
 
   #finalTxt {
     width: 100vw;
